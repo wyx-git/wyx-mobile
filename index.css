@@ -47,7 +47,8 @@ body {
 }
 
 .menu-address {
-    float: left;
+    position: absolute;
+    left: 0.1rem;
     width: 2.5rem;
     height: 0.44rem;
     display: flex;
@@ -103,6 +104,7 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    border: none;
     background: #e4e4e6;
     border-radius: 0.15rem;
 
@@ -210,43 +212,61 @@ body {
 
 .footer {
     margin: 0 auto;
-    width: 6.5rem;
-    height: 1rem;
+    width: 100%;
+    height: 1.5rem;
     position: fixed;
     bottom: 0;
     right: 0;
-    background: linear-gradient(to right, #f2f3f4, #f9f9f9);
+    background: #eff0f1;
     border-top: 0.01rem solid #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-button {
+    width: 20%;
+    height: 100%;
+}
+
+.footer-logo-1{
+    background: url("footer-pic-1.png") no-repeat center;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-size: 100%;
+}
+
+.footer-logo-2{
+    background: url("footer-pic-2.png")no-repeat center;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-size: 100%;
+}
+
+.footer-logo-3{
+    background: url("footer-pic-3.png")no-repeat center;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-size: 100%;
+}
+
+.footer-logo-4{
+    background: url("footer-pic-4.png")no-repeat center;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-size: 100%;
+}
+
+.footer-logo-5{
+    background: url("footer-pic-5.png")no-repeat center;
+    height: 1.1rem;
+    width: 1.1rem;
+    background-size: 100%;
+}
+.footer-button h3{
+    position: absolute;
     width: 1rem;
-    height: 1rem;
-}
-
-.footer-button:nth-child(1) {
-    background: url("footer-pic-1.png");
-    background-size: 100%;
-}
-
-.footer-button:nth-child(2) {
-    background: url("footer-pic-2.png");
-    background-size: 100%;
-}
-
-.footer-button:nth-child(3) {
-    background: url("footer-pic-3.png");
-    background-size: 100%;
-}
-
-.footer-button:nth-child(4) {
-    background: url("footer-pic-4.png");
-    background-size: 100%;
-}
-
-.footer-button:nth-child(5) {
-    background: url("footer-pic-5.png");
-    background-size: 100%;
+    bottom: 0;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.32rem;
 }
